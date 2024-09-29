@@ -10,7 +10,6 @@ public class Ex2_2_6 {
         else System.out.println("x = "+ -b/a);
     }
 
-
     public static void main(String[] args) {
         System.out.println("Nguyen Ho Tan Tai 20215134");
         try (Scanner sc = new Scanner(System.in)) {
