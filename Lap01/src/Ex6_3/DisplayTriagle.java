@@ -19,7 +19,7 @@ public class DisplayTriagle {
                 }
                 System.out.print("\n");
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Height of triagle  is not number can't print");
         }
         sc.close();
