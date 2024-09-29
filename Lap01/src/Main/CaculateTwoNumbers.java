@@ -20,7 +20,7 @@ public class CaculateTwoNumbers {
             JOptionPane.showMessageDialog(null,"Loi chia cho 0");
             System.exit(0);
         }
-        
+
         JOptionPane.showMessageDialog(null,
            "Nguyen Ho Tan Tai - 20215134\n" +
                "The sum of those two numbers is:" + (num1 + num2) + "\n" +
