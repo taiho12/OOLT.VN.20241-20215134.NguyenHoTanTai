@@ -1,0 +1,7 @@
+Khi nào nên dùng accessor:
+   + Trả về thông tin qua interface
+   + Kết nối với hệ thống bên ngoài
+   + Truy cập thuộc tính thông qua trường dữ liệu trực tiếp
+
+Thiết lập CRC giúp xác định lớp, chức năng của lớp và sự hợp tác của lớp với các lớp khác, giúp tinh giản sự phụ thuộc của các lớp với nhau.
+
