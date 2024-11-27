@@ -1,5 +1,0 @@
-Java cho phép tạo 1 constructor với paremeter là title và parameter khác với parameter là category, đây gọi là nạp chồng phương thức (method overloading)
-
-Nạp chồng phương thức là các phương thức có cùng tên, nhưng khác tham số. Có 2 cách để nạp chồng phương thức:
-+ Thay đổi số tham số truyền vào
-+ Thay đổi kiểu dữ liệu của tham số
