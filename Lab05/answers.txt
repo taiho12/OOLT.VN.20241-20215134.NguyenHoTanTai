@@ -1,0 +1,48 @@
+1. Write a toString() method for the DigitalVideoDisc class. What should be the return type of this method?
+- String.
+
+2. Which classes are aggregates of other classes?
+- Cart and Store are the aggregation of Media.
+- CompactDisc is the aggregation of Track.
+
+3. What are the advantages of Polymorphism?
+- Code reusability.
+- Easy maintainance and scalability.
+
+4. How is Inheritance useful to achieve Polymorphism in Java?
+- Inheritance allows subclasses to re-implement previously defined methods in different behavior to parent class, also known as method overriding, instead of creating new methods, especially when these methods tend to represent similar activity to parent class and other subclasses.
+
+5. What are the differences between Polymorphism and Inheritance in Java?
+- Inheritance tends to incorporate the properties and behaviors of parent class to subclasses while Polymorphism aims at modifying the manner something works through classes.
+
+6. What class should implement the Comparable interface?
+- Media.
+
+7. How should you implement the compareTo() method to reflect the ordering that we want?
+- I need to implement the compareTo() method in a way that defines the desired ordering of instances of the Media class.
+
+8. Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+- No. Use "Comparator" approach to achieve the mentioned effect.
+
+9. Suppose DVDs have a different ordering rule from other media types (title, decreasing length, then cost). How would you modify your code to allow this?
+
+- We should implement in DVD class this method.
+@Override
+    public int compareTo(Media media) {
+        if (media instanceof DVD dvd) {
+
+            int titleComparison = getTitle().compareTo(dvd.getTitle());
+            if (titleComparison != 0) {
+                return titleComparison;
+            }
+
+            int lengthComparison = Integer.compare(dvd.getLength(), getLength());
+            if (lengthComparison != 0) {
+                return lengthComparison;
+            }
+
+            return Float.compare(getCost(), dvd.getCost());
+        } else {
+            return super.compareTo(media);
+        }
+    }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="playingPopUp" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="hust.soict.hedspi.aims.screen.customer.controller.PlayingPopUpController">
+    <TextArea fx:id="tfPlayingPopUp" editable="false" prefHeight="260.0" prefWidth="367.0"/>
+</AnchorPane>
